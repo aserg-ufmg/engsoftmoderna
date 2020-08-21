@@ -6,4 +6,4 @@ Repositório com material suplementar do livro [Engenharia de Software Moderna](
 
 No seguinte [diretório](https://github.com/aserg-ufmg/engsoftmoderna/tree/master/design-patterns), você pode encontrar o código fonte dos padrões de projeto estudados no [Capítulo 6](https://engsoftmoderna.info/cap6.html) do livro.
 
-O código está implementado em Java, em um arquivo independente e auto-contido para cada padrão. O objetivo foi escrever um código que pode ser facilmente copiado e executado em qualquer IDE de Java, sem qualquer mudança.
+O código está implementado em Java, em um arquivo independente e auto-contido para cada padrão. O objetivo foi escrever um código que pode ser facilmente copiado e executado em qualquer IDE, sem qualquer mudança.
