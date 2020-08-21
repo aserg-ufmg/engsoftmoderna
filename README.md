@@ -1,6 +1,6 @@
 # Engenharia de Software Moderna
 
-Repositório com material suplementar do livro [Engenharia de Software Moderna](https://engsoftmoderna.info/)
+Repositório com material suplementar do livro [Engenharia de Software Moderna](https://engsoftmoderna.info/).
 
 ## Padrões de Projeto
 
