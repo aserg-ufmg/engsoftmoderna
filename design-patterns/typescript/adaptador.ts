@@ -1,15 +1,11 @@
-/**
-* Engenharia de Software Moderna - Padrões de Projeto (Cap. 6)
-* Prof. Marco Tulio Valente
-* 
-* Exemplo do padrão de projeto Adaptador
-*
-*/
+// Engenharia de Software Moderna - Padrões de Projeto (Cap. 6)
+// Prof. Marco Tulio Valente
+ 
+// Exemplo do padrão de projeto Adaptador
 
 
-/**
-* Classe concreta, representando um projetor da Samsung
-*/
+// Classe concreta, representando um projetor da Samsung
+
 class ProjetorSamsung {
   
   turnOn(): void { 
@@ -19,9 +15,8 @@ class ProjetorSamsung {
 }
 
 
-/**
-* Classe concreta, representando um projetor da LG
-*/
+// Classe concreta, representando um projetor da LG
+
 class ProjetorLG {
 
   enable(timer: number): void {
@@ -30,22 +25,22 @@ class ProjetorLG {
 
 }
 
-/**
-* Interface para "abstrair" o tipo de projetor (Samsung ou LG)
-*/
+
+// Interface para "abstrair" o tipo de projetor (Samsung ou LG)
+
 interface Projetor {
   liga(): void;
 }
 
-/**
-* Adaptador de ProjetorSamsung para Projetor
-* Um objeto da classe a seguir é um Projetor (pois implementa essa interface), 
-* mas internamente repassa toda chamada de método para o objeto adaptado 
-* (no caso, um ProjetorSamssung)
-*/
+
+// Adaptador de ProjetorSamsung para Projetor
+// Um objeto da classe a seguir é um Projetor (pois implementa essa interface), 
+// mas internamente repassa toda chamada de método para o objeto adaptado 
+// (no caso, um ProjetorSamssung)
+
 class AdaptadorProjetorSamsung implements Projetor {
 
-   private projetor: ProjetorSamsung;
+   projetor: ProjetorSamsung;
 
    constructor(projetor: ProjetorSamsung ) {
      this.projetor = projetor;
@@ -57,12 +52,12 @@ class AdaptadorProjetorSamsung implements Projetor {
   
 }
 
-/**
-* Idem classe anterior, mas agora adaptando ProjetoLG para Projetor 
-*/
+
+// Idem classe anterior, mas agora adaptando ProjetoLG para Projetor 
+
 class AdaptadorProjetorLG implements Projetor {
 
-   private projetor: ProjetorLG;
+   projetor: ProjetorLG;
 
    constructor (projetor: ProjetorLG) {
      this.projetor = projetor;
@@ -74,7 +69,6 @@ class AdaptadorProjetorLG implements Projetor {
   
 }
 
-
 class SistemaControleProjetores { // não tem conhecimento de "projetores concretos"
   
   init(projetor: Projetor): void {
@@ -83,8 +77,10 @@ class SistemaControleProjetores { // não tem conhecimento de "projetores concre
 
 }
 
-let samsung: AdaptadorProjetorSamsung = new AdaptadorProjetorSamsung(new ProjetorSamsung());
-let lg: AdaptadorProjetorLG  = new AdaptadorProjetorLG(new ProjetorLG());
-let scp: SistemaControleProjetores = new SistemaControleProjetores();
+// programa principal
+
+const samsung: AdaptadorProjetorSamsung = new AdaptadorProjetorSamsung(new ProjetorSamsung());
+const lg: AdaptadorProjetorLG  = new AdaptadorProjetorLG(new ProjetorLG());
+const scp: SistemaControleProjetores = new SistemaControleProjetores();
 scp.init(samsung); // recebem como parâmetros objetos adaptadores, 
 scp.init(lg);      // que possuem internamente objetos (isto é, projetores) concretos
