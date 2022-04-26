@@ -10,6 +10,6 @@ Estamos disponibilizando o código em três linguagens:
 
 * [Java](https://github.com/aserg-ufmg/engsoftmoderna/tree/master/design-patterns/Java) (código original do livro)
 * [CSharp](https://github.com/aserg-ufmg/engsoftmoderna/tree/master/design-patterns/CSharp) (contribuição de [N. Tarzia](https://github.com/nicolastarzia/))
-* [Python](https://github.com/aserg-ufmg/engsoftmoderna/tree/master/design-patterns/Python) (contribuição de [Pablo Hugen](https://github.com/Tomcat-42/))
+* [Python](https://github.com/aserg-ufmg/engsoftmoderna/tree/master/design-patterns/python) (contribuição de [Pablo Hugen](https://github.com/Tomcat-42/))
 
 Independentemente da linguagem, o código é disponibilizado em um arquivo independente e auto-contido para cada padrão. O objetivo foi escrever um código que pode ser facilmente copiado e executado em qualquer IDE, sem mudanças.
