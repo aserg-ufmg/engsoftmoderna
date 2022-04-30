@@ -66,11 +66,11 @@ class ZipChannel extends ChannelDecorator {
    
    public void send(String m)  {
       System.out.println("Decorador compactando > " + m);
-      super.channel.send(m);
+      super.send(m);
    }
    
    public String receive()  {
-      String m = super.channel.receive();
+      String m = super.receive();
       System.out.println("Decorador descompactando < " + m);
       return m;
    }
