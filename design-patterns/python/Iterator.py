@@ -70,9 +70,6 @@ class Main:
 
     @staticmethod
     def main() -> None:
-        """
-        Método principal
-        """
 
         palavras: ListaPalavras = ListaPalavras(
             ["Palavra01", "Palavra02", "Palavra03"])

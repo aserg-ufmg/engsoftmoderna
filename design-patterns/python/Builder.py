@@ -58,10 +58,6 @@ class Main:
 
     @staticmethod
     def main() -> None:
-        """
-        Método principal
-        """
-
         esm: Livro = (
             Livro.Builder().set_nome("Engenharia de Software Moderna").
             set_editora("UFMG").set_ano("2020").build())

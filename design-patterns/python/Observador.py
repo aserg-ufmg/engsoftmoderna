@@ -20,16 +20,10 @@ class Subject:
         self.observers = []
 
     def add_observer(self, observer: "Observer") -> None:
-        """
-        Adiciona um observador ao sujeito
-        """
         if observer not in self.observers:
             self.observers.append(observer)
 
     def remove_observer(self, observer: "Observer") -> None:
-        """
-        Remove um observador do sujeito
-        """
         if observer in self.observers:
             self.observers.remove(observer)
 

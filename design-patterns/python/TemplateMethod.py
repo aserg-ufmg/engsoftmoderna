@@ -53,7 +53,7 @@ class FuncionarioCLT(Funcionario):
         """
         implementação do método abstrato
         """
-        return self._salario * 0.01
+        return self._salario * 0.1
 
     def calcDescontosPlanoSaude(self) -> float:
         """
