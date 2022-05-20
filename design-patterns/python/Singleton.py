@@ -18,7 +18,7 @@ class Logger(object):
 
     def __new__(cls):
         """A cada chamada de Logger(), retorna a instância única"""
-        # 1a vez que chama-se getInstance
+        # 1a vez que cria um objeto da classe
         if cls.__instance is None:
             cls.__instance = object.__new__(cls)
         return cls.__instance

@@ -1,12 +1,13 @@
-from json import loads
-from typing import Any, Dict
-from urllib.request import urlopen
 """
 Engenharia de Software Moderna - Padrões de Projeto (Cap. 6)
 Prof. Marco Tulio Valente
 
 Exemplo do padrão de projeto Fachada
 """
+
+from json import loads
+from typing import Any, Dict
+from urllib.request import urlopen
 
 # Exemplos de APIs não tão simples
 # Pois para obter dados como altura e cor de pele
